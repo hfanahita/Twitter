@@ -1,0 +1,18 @@
+users
+username UNIQUE CHAR(200)
+password CHAR(10)
+phone INTEGER
+
+likes
+tweet_id UNIQUE CHAR(36)
+username CHAR(200)
+
+tweet
+tweet_id UNIQUE CHAR(36)
+text CHAR(400)
+creator CHAR(200)
+created_time TIMESTAMP
+
+retweet
+tweet_id UNIQUE CHAR(36)
+username CHAR(200)
